@@ -1,0 +1,2 @@
+<!--pages/product/detail.wxml-->
+<text>{{ product_id }}</text>

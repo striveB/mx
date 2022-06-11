@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="index">
+  <view wx:if="{{ swiperList.length }}" class="swiper-content">
+    <swiper 
+    bindchange="onSwiperChange" 
+    autoplay="true" 
+    interval="3000"
+    circular="true">
+      <swiper-item wx:for="{{ swiperList }}" wx:key="index">
+        <image 
+        bindtap="onSwiperTap" 
+        data-item="{{ item }}"
+        mode="aspectFill" 
+        src="{{ item.image_url }}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="dots">
+      <view class="dot {{current == index ? 'active' : ''}}" wx:for="{{ swiperList }}" wx:key="index"></view>
+    </view>
+  </view>
+</view>
