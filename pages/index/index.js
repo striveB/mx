@@ -1,9 +1,11 @@
 // index.js
 import swiper from '../../api/swiper'
+const app = getApp()
 Page({
   data: {
     swiperList: [],
     current: 0,
+    memberInfo: false
   },
   onLoad(){
     swiper.list().then(res => {
@@ -12,6 +14,16 @@ Page({
         swiperList
       })
     })
+  },
+  onShow(){
+    this.loadMemberInfo();
+  },
+  loadMemberInfo(){
+    if(wx.getStorageSync('phoneNumber')) {
+      this.setData({
+        memberInfo: true
+      })
+    }
   },
   onSwiperChange(e){
     let {current} = e.detail;
@@ -30,5 +42,10 @@ Page({
         url: `/pages/product/detail?product_id=${item.target}`
       })
     }
+  },
+  goToLogin(){
+    wx.navigateTo({
+      url: '/pages/login/index',
+    })
   }
 })

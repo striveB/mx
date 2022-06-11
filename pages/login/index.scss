@@ -1,0 +1,34 @@
+$primary-color: #E60012;
+.page {
+  .logo{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 75rpx;
+    overflow: hidden;
+    margin-bottom: 22rpx;
+  }
+  .logo-title {
+    margin-bottom: 160rpx;
+  }
+  .info {
+    font-size: 37rpx;
+    font-weight: bold;
+    margin-bottom: 84rpx;
+  }
+  .tip {
+    font-size: 20rpx;
+    color: #777;
+    margin-bottom: 10rpx;
+  }
+  .login-btn {
+    width: 590rpx;
+    height: 85rpx;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    &.button-hover {
+      opacity: 0.6;
+    }
+  }
+}

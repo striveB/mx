@@ -1,4 +1,4 @@
-/**index.wxss**/
+$primary-color: #E60012;
 .swiper-content {
   width: 100vw;
   height: 680rpx;
@@ -85,7 +85,20 @@
     .currency {
       margin-left: 28rpx;
       margin-top: 10rpx;
-      color: red;
+      color: #E60012;
+    }
+  }
+  .login-btn {
+    width: 150rpx;
+    height: 65rpx;
+    line-height: 65rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 25rpx;
+    &:active {
+      opacity: 0.6;
     }
   }
 }
