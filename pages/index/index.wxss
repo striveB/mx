@@ -1,34 +1,34 @@
 /**index.wxss**/
-.index .swiper-content {
+.swiper-content {
   width: 100vw;
   height: 680rpx;
   position: relative;
 }
 
-.index .swiper-content swiper {
+.swiper-content swiper {
   height: 100%;
 }
 
-.index .swiper-content swiper swiper-item {
+.swiper-content swiper swiper-item {
   width: 100%;
   height: 100%;
 }
 
-.index .swiper-content swiper swiper-item image {
+.swiper-content swiper swiper-item image {
   width: 100%;
   height: 100%;
   border-bottom-left-radius: 20rpx;
   border-bottom-right-radius: 20rpx;
 }
 
-.index .swiper-content .dots {
+.swiper-content .dots {
   display: flex;
   position: absolute;
   left: 50rpx;
-  bottom: 50rpx;
+  bottom: 58rpx;
 }
 
-.index .swiper-content .dots .dot {
+.swiper-content .dots .dot {
   width: 8rpx;
   height: 8rpx;
   border-radius: 4rpx;
@@ -38,7 +38,67 @@
   transition: all 0.2s;
 }
 
-.index .swiper-content .dots .dot.active {
+.swiper-content .dots .dot.active {
   width: 29rpx;
   opacity: 1;
+}
+
+.memer-area {
+  z-index: 2;
+  margin-top: -40rpx;
+  width: 688rpx;
+  height: 174rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25rpx;
+}
+
+.memer-area .vip-box {
+  display: flex;
+}
+
+.memer-area .vip-box image {
+  flex-shrink: 0;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+  margin-right: 26rpx;
+}
+
+.memer-area .vip-box .meta .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 18rpx;
+}
+
+.memer-area .vip-box .meta .progress-bar {
+  width: 90%;
+}
+
+.memer-area .vip-box .meta .tips {
+  margin-top: 14rpx;
+  color: #777;
+  font-size: 24rpx;
+}
+
+.memer-area .coin-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.memer-area .coin-box image {
+  width: 130rpx;
+  height: 70rpx;
+}
+
+.memer-area .coin-box .currency {
+  margin-left: 28rpx;
+  margin-top: 10rpx;
+  color: red;
 }

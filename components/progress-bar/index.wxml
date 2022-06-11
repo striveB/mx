@@ -1,0 +1,6 @@
+<view 
+class="track" 
+style="{{ trackStyle }}">
+  <view class="value"></view>
+  <view class="bar" style="{{ barStyle }}"></view>
+</view>

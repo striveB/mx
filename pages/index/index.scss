@@ -1,40 +1,91 @@
 /**index.wxss**/
-.index{
-  .swiper-content {
-    width: 100vw;
-    height: 680rpx;
-    position: relative;
-    swiper {
+.swiper-content {
+  width: 100vw;
+  height: 680rpx;
+  position: relative;
+  swiper {
+    height: 100%;
+    swiper-item {
+      width: 100%;
       height: 100%;
-      swiper-item {
+      image {
         width: 100%;
         height: 100%;
-        image {
-          width: 100%;
-          height: 100%;
-          border-bottom-left-radius: 20rpx;
-          border-bottom-right-radius: 20rpx;
-        }
-      }
-    }
-    .dots {
-      display: flex;
-      position: absolute;
-      left: 50rpx;
-      bottom: 50rpx;
-      .dot{
-        width: 8rpx;
-        height: 8rpx;
-        border-radius: 4rpx;
-        background-color: #fff;
-        margin-right: 3px;
-        opacity: 0.5;
-        transition: all 0.2s;
-        &.active {
-          width: 29rpx;
-          opacity: 1;
-        }
+        border-bottom-left-radius: 20rpx;
+        border-bottom-right-radius: 20rpx;
       }
     }
   }
-} 
+  .dots {
+    display: flex;
+    position: absolute;
+    left: 50rpx;
+    bottom: 58rpx;
+    .dot{
+      width: 8rpx;
+      height: 8rpx;
+      border-radius: 4rpx;
+      background-color: #fff;
+      margin-right: 3px;
+      opacity: 0.5;
+      transition: all 0.2s;
+      &.active {
+        width: 29rpx;
+        opacity: 1;
+      }
+    }
+  }
+}
+.memer-area {
+  z-index: 2;
+  margin-top: -40rpx;
+  width: 688rpx;
+  height: 174rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25rpx;
+  .vip-box {
+    display: flex;
+    image {
+      flex-shrink: 0;
+      width: 100rpx;
+      height: 100rpx;
+      border-radius: 50rpx;
+      overflow: hidden;
+      margin-right: 26rpx;
+    }
+    .meta {
+      .title {
+        font-size: 32rpx;
+        font-weight: bold;
+        margin-bottom: 18rpx;
+      }
+      .progress-bar {
+        width: 90%;
+      }
+      .tips {
+        margin-top: 14rpx;
+        color: #777;
+        font-size: 24rpx;
+      }
+    }
+  }
+  .coin-box {
+    display: flex;
+    flex-direction: column;
+    image {
+      width: 130rpx;
+      height: 70rpx;
+    }
+    .currency {
+      margin-left: 28rpx;
+      margin-top: 10rpx;
+      color: red;
+    }
+  }
+}
