@@ -1,0 +1,141 @@
+$primary-color: #E60012;
+.page {
+  position: relative;
+  .bg-color {
+    width: 100%;
+    height: 700rpx;
+    background-image: linear-gradient(#ffe6e6, #ffe6e6, #f8f8f8);
+  }
+  .body{
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .user-card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 170rpx;
+      margin-bottom: 30rpx;
+      .user-info {
+        display: flex;
+        align-items: center;
+        font-size: 28rpx;
+        image {
+          width: 130rpx;
+          height: 130rpx;
+          border-radius: 50%;
+          margin-right: 20rpx;
+          flex-shrink: 0;
+        }
+      }
+      .login-btn {
+        height: 65rpx;
+        line-height: 65rpx;
+        text-align: center;
+        border-radius: 10rpx;
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 25rpx;
+        box-sizing: border-box;
+        padding: 0 25rpx;
+        &:active {
+          opacity: 0.6;
+        }
+      }
+    }
+    .merber-card {
+      box-sizing: border-box;
+      padding: 45rpx;
+      display: flex;
+      margin-bottom: 30rpx;
+      font-size: 25rpx;
+      color: #fff;
+      border-radius: 10rpx;
+      background-image: linear-gradient(#ff96be, #ff6482);
+      .merber-left {
+        flex: 1;
+        .title {
+          font-size: 50rpx;
+          font-weight: bold;
+          margin-bottom: 35rpx;
+        }
+        .progress {
+          margin-top: 10rpx;
+          margin-bottom: 20rpx;
+        }
+      }
+      .merber-right {
+        margin-left: 70rpx;
+        text-align: center;
+        image {
+          width: 130rpx;
+          height: 130rpx;
+          border-radius: 50%;
+          margin-bottom: 20rpx;
+        }
+      }
+    }
+    .card-list {
+      display: flex;
+      margin-bottom: 30rpx;
+      justify-content: space-between;
+      .card {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        background-color: #fff;
+        border-radius: 10rpx;
+        box-sizing: border-box;
+        padding: 20rpx;
+        &:first-child {
+          margin-right: 20rpx;
+        }
+        .card-left {
+          .name {
+            font-size: 26rpx;
+            color: #777;
+          }
+        }
+        image {
+          width: 80rpx;
+          height: 80rpx;
+        }
+      }
+    }
+    .menu-list {
+      background-color: #fff;
+      border-radius: 10rpx;
+      margin-bottom: 20rpx;
+      .menu {
+        box-sizing: border-box;
+        padding: 35rpx 30rpx;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+          display: flex;
+          align-items: center;
+          image {
+            width: 45rpx;
+            height: 45rpx;
+            margin-right: 20rpx;
+          }
+        }
+        .icon {
+          color: #777;
+          font-size: 24rpx;
+        }
+      }
+    }
+    .version {
+      color: #a6a6a6;
+      text-align: center;
+      font-size: 22rpx;
+    }
+  }
+}

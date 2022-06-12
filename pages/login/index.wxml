@@ -7,5 +7,5 @@
   class="login-btn" 
   open-type="getPhoneNumber"
   bindgetphonenumber="login">一键登录</button>
-  <view class="cancel">取消</view>
+  <view class="cancel" bindtap="goToBack">取消</view>
 </view>

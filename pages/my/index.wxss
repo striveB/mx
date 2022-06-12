@@ -1,1 +1,162 @@
-/* pages/my/index.wxss */
+.page {
+  position: relative;
+}
+
+.page .bg-color {
+  width: 100%;
+  height: 700rpx;
+  background-image: linear-gradient(#ffe6e6, #ffe6e6, #f8f8f8);
+}
+
+.page .body {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page .body .user-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 170rpx;
+  margin-bottom: 30rpx;
+}
+
+.page .body .user-card .user-info {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.page .body .user-card .user-info image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.page .body .user-card .login-btn {
+  height: 65rpx;
+  line-height: 65rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: #E60012;
+  color: #fff;
+  font-size: 25rpx;
+  box-sizing: border-box;
+  padding: 0 25rpx;
+}
+
+.page .body .user-card .login-btn:active {
+  opacity: 0.6;
+}
+
+.page .body .merber-card {
+  box-sizing: border-box;
+  padding: 45rpx;
+  display: flex;
+  margin-bottom: 30rpx;
+  font-size: 25rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  background-image: linear-gradient(#ff96be, #ff6482);
+}
+
+.page .body .merber-card .merber-left {
+  flex: 1;
+}
+
+.page .body .merber-card .merber-left .title {
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-bottom: 35rpx;
+}
+
+.page .body .merber-card .merber-left .progress {
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.page .body .merber-card .merber-right {
+  margin-left: 70rpx;
+  text-align: center;
+}
+
+.page .body .merber-card .merber-right image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
+
+.page .body .card-list {
+  display: flex;
+  margin-bottom: 30rpx;
+  justify-content: space-between;
+}
+
+.page .body .card-list .card {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.page .body .card-list .card:first-child {
+  margin-right: 20rpx;
+}
+
+.page .body .card-list .card .card-left .name {
+  font-size: 26rpx;
+  color: #777;
+}
+
+.page .body .card-list .card image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.page .body .menu-list {
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.page .body .menu-list .menu {
+  box-sizing: border-box;
+  padding: 35rpx 30rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page .body .menu-list .menu .title {
+  display: flex;
+  align-items: center;
+}
+
+.page .body .menu-list .menu .title image {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 20rpx;
+}
+
+.page .body .menu-list .menu .icon {
+  color: #777;
+  font-size: 24rpx;
+}
+
+.page .body .version {
+  color: #a6a6a6;
+  text-align: center;
+  font-size: 22rpx;
+}

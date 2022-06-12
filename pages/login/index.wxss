@@ -1,4 +1,5 @@
 .page .logo {
+  margin-top: 100rpx;
   width: 150rpx;
   height: 150rpx;
   border-radius: 75rpx;
@@ -28,9 +29,13 @@
   color: #fff;
   background-color: #E60012;
   border-radius: 10rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 40rpx;
 }
 
 .page .login-btn.button-hover {
   opacity: 0.6;
+}
+
+.page .cancel {
+  color: #8b8b8b;
 }

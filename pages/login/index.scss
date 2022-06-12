@@ -1,6 +1,7 @@
 $primary-color: #E60012;
 .page {
   .logo{
+    margin-top: 100rpx;
     width: 150rpx;
     height: 150rpx;
     border-radius: 75rpx;
@@ -26,9 +27,12 @@ $primary-color: #E60012;
     color: #fff;
     background-color: $primary-color;
     border-radius: 10rpx;
-    margin-bottom: 20rpx;
+    margin-bottom: 40rpx;
     &.button-hover {
       opacity: 0.6;
     }
+  }
+  .cancel {
+    color: #8b8b8b;
   }
 }

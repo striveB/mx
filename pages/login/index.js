@@ -13,5 +13,8 @@ Page({
   login(){
     wx.setStorageSync('phoneNumber', 18739009031)
     wx.navigateBack()
+  },
+  goToBack(){
+    wx.navigateBack();
   }
 })
