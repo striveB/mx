@@ -47,5 +47,15 @@ Page({
     wx.navigateTo({
       url: '/pages/login/index',
     })
+  },
+  onMenuClick(){
+    wx.switchTab({
+      url: '/pages/menu/index',
+    })
+  },
+  onTodayClick(){
+    wx.navigateTo({
+      url: '/pages/web-view/index?url=https://baidu.com',
+    })
   }
 })

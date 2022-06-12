@@ -34,4 +34,24 @@
     </view>
     <view wx:if="{{ !memberInfo }}" class="login-btn" bindtap="goToLogin">授权登录</view>
   </view>
+  <view class="menu-area">
+    <view class="location">
+      <view class="title">
+        <image src="../../assets/images/menu.png"></image>
+        <view>蜜雪冰城（昌平地铁店）</view>
+      </view>
+    </view>
+    <image 
+    class="menu-banner" 
+    src="../../assets/images/menu-banner.jpg"
+    bindtap="onMenuClick"></image>
+  </view>
+  <view class="banner-list">
+    <image 
+    class="banner" 
+    src="../../assets/images/banner-1.jpg"
+    bindtap="onTodayClick"></image>
+    <image class="banner" src="../../assets/images/banner-2.jpg"></image>
+    <image class="banner" src="../../assets/images/banner-3.jpg"></image>
+  </view>
 </view>

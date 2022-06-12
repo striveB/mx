@@ -43,6 +43,7 @@
 }
 
 .memer-area {
+  margin-bottom: 50rpx;
   z-index: 2;
   margin-top: -40rpx;
   width: 688rpx;
@@ -55,6 +56,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 25rpx;
+  box-sizing: border-box;
 }
 
 .memer-area .vip-box {
@@ -115,4 +117,47 @@
 
 .memer-area .login-btn:active {
   opacity: 0.6;
+}
+
+.menu-area {
+  margin-bottom: 36rpx;
+}
+
+.menu-area .location {
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  color: #777;
+}
+
+.menu-area .location .title {
+  display: flex;
+  align-items: center;
+}
+
+.menu-area .location .title image {
+  margin-right: 10rpx;
+  width: 18rpx;
+  height: 25rpx;
+}
+
+.menu-area .menu-banner {
+  width: 688rpx;
+  height: 330rpx;
+  border-radius: 10rpx;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner-list {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.banner-list .banner {
+  width: 216rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
