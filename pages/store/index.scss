@@ -1,0 +1,100 @@
+$gray-color: #B7B7B7;
+$gray-color-1: #777;
+.page {
+  display: flex;
+  flex-direction: column;
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20rpx;
+    background-color: #fff;
+    .search {
+      border-radius: 55rpx;
+      padding: 15rpx 25rpx;
+      font-size: 28rpx;
+      background-color: #F5F5F5;
+      color: $gray-color;
+    }
+  }
+  .store-map {
+    width: 100%;
+    transition: all 0.2s;
+  }
+  .collapse-area {
+    width: 100%;
+    padding: 20rpx 0;
+    font-size: 28rpx;
+    text-align: center;
+    color: $gray-color-1;
+    background-color: #fff;
+  }
+  .store-list {
+    width: 100%;
+    flex: 1;
+    padding: 20rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+    .store {
+      width: 100%;
+      padding: 20rpx;
+      margin-bottom: 20rpx;
+      box-sizing: border-box;
+      line-height: 45rpx;
+      border-radius: 10rpx;
+      background-color: #fff;
+      display: flex;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .info {
+        flex: 1;
+        .title {
+          font-weight: bold;
+        }
+        .desc {
+          font-size: 26rpx;
+          color: $gray-color-1;
+        }
+        .tag {
+          font-size: 24rpx;
+          &.start {
+            display: inline-block;
+            background-color: red;
+            padding: 0 10rpx;
+            color: #fff;
+          }
+          &.stop {
+            display: inline-block;
+            background-color: #F5F5F5;
+            padding: 0 10rpx;
+            color: $gray-color;
+          }
+        }
+      }
+      .location {
+        height: 100%;
+        font-size: 24rpx;
+        padding: 30rpx;
+        box-sizing: border-box;
+        text-align: center;
+        color: $gray-color-1;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        .distance {
+          margin-bottom: 25rpx;
+        }
+        .icons {
+          display: flex;
+          justify-content: space-between;
+          image {
+            width: 55rpx;
+            height: 55rpx;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

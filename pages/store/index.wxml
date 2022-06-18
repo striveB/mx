@@ -1,0 +1,42 @@
+<view class="page">
+  <view class="header">
+    <tabs tabs="{{ [{label: '附近门店', value: 'nearby'}, {label: '常去门店', value: 'recent'}] }}"></tabs>
+    <view class="search">
+      <text class="text">♀ 搜索门店</text>
+    </view>
+  </view>
+
+  <map 
+  id="store-map"
+  class="store-map" 
+  latitude="{{ latitude }}"
+  longitude="{{ longitude }}"
+  style="{{ 'height:' + currentMapHeight + 'px' }}"
+  show-location>
+  </map>
+
+  <view class="collapse-area" bindtap="onCloseMap">
+    {{ currentMapHeight ? '收起地图 👆' : '展开地图 👇' }}
+  </view>
+
+  <scroll-view scroll-y="{{ true }}" class="store-list">
+    <view class="store" wx:for="{{ 5 }}" wx:key="index">
+      <view class="info">
+        <view class="title">
+        蜜雪冰城（昌平地铁站）
+        </view>
+        <view class="desc">鼓楼南大街车厢胡同45号</view>
+        <view class="desc">营业时间：09:00~23:00</view>
+        <view class="tag start">营业中</view>
+        <view class="tag stop">已打烊</view>
+      </view>
+      <view class="location">
+        <view class="distance">距离214m</view>
+        <view class="icons">
+          <image src="../../assets/images/location.jpg"></image>
+          <image src="../../assets/images/phone.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,115 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.page .header .search {
+  border-radius: 55rpx;
+  padding: 15rpx 25rpx;
+  font-size: 28rpx;
+  background-color: #F5F5F5;
+  color: #B7B7B7;
+}
+
+.page .store-map {
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.page .collapse-area {
+  width: 100%;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  text-align: center;
+  color: #777;
+  background-color: #fff;
+}
+
+.page .store-list {
+  width: 100%;
+  flex: 1;
+  padding: 20rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.page .store-list .store {
+  width: 100%;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  line-height: 45rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  display: flex;
+}
+
+.page .store-list .store:last-child {
+  margin-bottom: 0;
+}
+
+.page .store-list .store .info {
+  flex: 1;
+}
+
+.page .store-list .store .info .title {
+  font-weight: bold;
+}
+
+.page .store-list .store .info .desc {
+  font-size: 26rpx;
+  color: #777;
+}
+
+.page .store-list .store .info .tag {
+  font-size: 24rpx;
+}
+
+.page .store-list .store .info .tag.start {
+  display: inline-block;
+  background-color: red;
+  padding: 0 10rpx;
+  color: #fff;
+}
+
+.page .store-list .store .info .tag.stop {
+  display: inline-block;
+  background-color: #F5F5F5;
+  padding: 0 10rpx;
+  color: #B7B7B7;
+}
+
+.page .store-list .store .location {
+  height: 100%;
+  font-size: 24rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  text-align: center;
+  color: #777;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page .store-list .store .location .distance {
+  margin-bottom: 25rpx;
+}
+
+.page .store-list .store .location .icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page .store-list .store .location .icons image {
+  width: 55rpx;
+  height: 55rpx;
+  border-radius: 50%;
+}

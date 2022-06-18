@@ -1,0 +1,21 @@
+.tabs {
+  position: relative;
+  display: flex;
+  .tab {
+    color: #777;
+    margin-right: 15rpx;
+    &.active {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+  .line {
+    height: 8rpx;
+    border-radius: 4rpx;
+    background-color: #E60012;
+    position: absolute;
+    bottom: -22rpx;
+    left: 0rpx;
+    transition: all 0.3s;
+  }
+}

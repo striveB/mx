@@ -19,7 +19,7 @@
         <view class="desc">再升1级可享【升级礼包】等6项权益</view>
       </view>
       <view class="merber-right">
-        <image src="../../assets/images/me-avatar.png"></image>
+        <image src="../../assets/images/icon-snowflake.png"></image>
         <view class="go-to">查看权益 ></view>
       </view>
     </view>
